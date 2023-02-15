@@ -1,0 +1,32 @@
+
+.container{
+  width: 100%;
+  background-color: #FFF;
+  margin: 0;
+}
+
+.component-area{
+  float: left;
+  width: auto;
+  flex: auto;
+}
+
+.navPanel{
+  width: 250px;
+  float: left;
+  height: 100vh;
+  border-right: 1px solid #333;
+  background-color: #efefef;
+}
+
+.report-view{
+  position:relative;
+  left: 100px;
+  top: 0px;
+  height:100vh;
+  width: calc(100vw - 625px);
+}
+
+.nav li:hover{
+  background-color: lightblue;
+}
