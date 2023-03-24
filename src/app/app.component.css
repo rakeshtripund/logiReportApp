@@ -7,8 +7,8 @@
 
 .component-area{
   float: left;
-  width: auto;
-  flex: auto;
+  width: 70%;
+  /* flex: auto; */
 }
 
 .navPanel{
@@ -21,10 +21,10 @@
 
 .report-view{
   position:relative;
-  left: 100px;
+  left: 50px;
   top: 0px;
   height:100vh;
-  width: calc(100vw - 625px);
+  width: calc(100vw - 400px);
 }
 
 .nav li:hover{

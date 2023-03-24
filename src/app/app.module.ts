@@ -4,12 +4,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {DropdownModule} from 'primeng/dropdown';
 import { HomeComponent } from './home/home.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { ReportViewerComponent } from './report-viewer/report-viewer.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ReportViewerComponent
   ],
   imports: [
     BrowserModule,

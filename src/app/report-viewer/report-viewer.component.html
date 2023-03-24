@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="navPanel">
+    <!-- <div style="margin: 25px; font-weight:bold;"><app-current-user-view></app-current-user-view></div> -->
+    <div class="p-3">
+      <select class="form-control" name="reportName" id="reportName" #reportName (change)="getReportName(reportName.value)">
+        <option selected disabled>----Select a Report----</option>
+        <option value=1>Open Work Order</option>
+        <option value=2>Open Work Order Details</option>
+        <option value=3>Closed Work Order</option>
+        <option value=4>Closed Work Order Details</option>
+        <option value=5>Cost Work History</option>
+        <option value=6>Work Order Cost List</option>
+        <option value=7>Closed Work Order Chart By Work Order Type</option>
+        <option value=8>Active Work Orders By Users</option>
+        <option value=9>Basic KPI Counts</option>
+        <option value=10>Late Work Order Priority</option>
+        <option value=11>Maintainenece Back Log</option>
+        <option value=12>Planned Maintenance Percentage</option>
+        <option value=13>Preventive Maintenance Compliance</option>
+        <option value=14>Technician Hours Finished</option>
+        <option value=15>Top 10 Assets</option>
+        <option value=16>Test</option>
+      </select>
+    </div>
+
+    <div class="p-3">
+      <select class="form-control m-1" name="parameters" id="parameters" *ngFor="let param of selectedReportParameter">
+          <option  [value]="param">{{param}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="component-area">
+    <div id="reportDiv" class="report-view">
+      <br />
+    </div>
+  </div>
+
+
+  <br style="clear:both;" />
+</div>
